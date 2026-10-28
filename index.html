@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi Web Sederhana</title>
-    <!-- Menghubungkan file CSS -->
+    <title>Aplikasi PWA Saya</title>
+    
+    <!-- 1. Menghubungkan file CSS (Pastikan tanpa garis miring di depan agar aman di lokal maupun hosting) -->
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="/manifest.json">
+
+    <!-- 2. Menghubungkan file Manifest PWA agar aplikasi bisa diinstal ke HP tanpa Play Store atau App Store -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+
+    <!-- 3. Memuat Pustaka Supabase dari CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
+
     <div class="container">
-        <h1>Halo, Selamat Datang!</h1>
-        <p id="pesan">Klik tombol di bawah untuk melihat perubahan.</p>
-        <button id="tombolUbah">Klik Saya</button>
+        <h1>Selamat Datang di PWA Saya</h1>
+        <p id="status">Menghubungkan ke database...</p>
     </div>
 
-    <!-- Menghubungkan file JavaScript -->
+    <!-- 4. Menghubungkan file logika JavaScript Anda -->
     <script src="script.js"></script>
 </body>
 </html>
